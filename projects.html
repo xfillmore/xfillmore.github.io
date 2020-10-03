@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Projects</title>
+
+        <meta name='author' content='Xuedan Fillmore'>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
+    <body style='background-color:#a4a4a4;'>
+        <nav class='navbar bg-dark navbar-expand-md'>
+            <ul class='navbar-nav mr-auto'>
+                <li class='nav-item'><a class='nav-link' href='./mypage_bootstrap.html'>Home</a></li>
+                <li class='nav-item'><a class='nav-link' href=''>Projects</a></li>
+                <!-- <li class='nav-item'><a class='nav-link' href='./form.html'>Form</a></li> -->
+            </ul>
+            <ul class='navbar-nav ml-auto'>
+                <li class='nav-item fixed-right'><a class='navbar-brand' href='https://github.com/xfillmore/'><img alt='github logo' src='./img/github_logo.png' style='max-width:50px;'></a></li>
+            </ul>
+        </nav>
+
+        <div id='projectCarousel' class='carousel slide' data-ride='carousel'>
+            <ol class='carousel-indicators'>
+                <li data-target='#projectCarousel' data-slide-to='0' class='active'></li>
+                <li data-target='#projectCarousel' data-slide-to='1'></li>
+                <li data-target='#projectCarousel' data-slide-to='2'></li>
+            </ol>
+
+            <div class='carousel-inner'>
+                <div class='carousel-item active' style='height:100vh'>
+                    <img class='d-block w-100' src='./img/ps_tigre.jpg' alt='tiger'>
+                    <div class='carousel-caption card bg-dark text-light' style='width:600px;'>
+                        <div class='card-header'><h5>Gradient Tiger</h5></div>
+                        <div class='card-body'>
+                            <p>Made on top of photograph with selection and gradients in Adobe PhotoShop</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='carousel-item' style='height:100vh'>
+                    <img class='d-block w-100' src='./img/portfolio_website_old_snapshot.JPG' alt='portfolio website snapshot'>
+                    <div class='carousel-caption card bg-dark text-light' style='width:600px;'>
+                        <div class='card-header'><h5>Old Portfolio Website</h5></div>
+                        <div class='card-body'>
+                            <p>Made for ATLS 2200 Web</p>
+                        </div>
+                    </div>
+                </div>
+                <div class='carousel-item' style='height:100vh'>
+                    <img class='d-block w-100' src='./img/farkel_website_snapshot.JPG' alt='online farkel website snapshot'>
+                    <div class='carousel-caption card bg-dark text-light' style='width:600px;'>
+                        <div class='card-header'><h5>Online Farkel</h5></div>
+                        <div class='card-body'>
+                            <p>A game built using vanilla HTML, CSS, and JavaScript. Has bugs.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class='carousel-control-prev' href='#projectCarousel' role='button' data-slide='prev'>
+                <span class='carousel-control-prev-icon' aria-hidden='true'></span>
+                <span class='sr-only'>Previous</span>
+            </a>
+            <a class='carousel-control-next' href='#projectCarousel' role='button' data-slide='next'>
+                <span class='carousel-control-next-icon' aria-hidden='true'></span>
+                <span class='sr-only'>Next</span>
+            </a>
+        </div>
+    </body>
+</html>

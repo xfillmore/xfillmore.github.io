@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Projects</title>
+
+        <meta name='author' content='Xuedan Fillmore'>
+
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+
+    <body style='background-color:#a4a4a4;'>
+        <nav class='navbar bg-dark navbar-expand-md'>
+            <ul class='navbar-nav mr-auto'>
+                <li class='nav-item'><a class='nav-link' href='./mypage_bootstrap.html'>Home</a></li>
+                <li class='nav-item'><a class='nav-link' href=''>Projects</a></li>
+                <!-- <li class='nav-item'><a class='nav-link' href='./form.html'>Form</a></li> -->
+            </ul>
+            <ul class='navbar-nav ml-auto'>
+                <li class='nav-item fixed-right'><a class='navbar-brand' href='https://github.com/xfillmore/'><img alt='github logo' src='./img/github_logo.png' style='max-width:50px;'></a></li>
+            </ul>
+        </nav>
+
+        <div class='container'>
+            <form>
+                <div class='form-group'>
+                    <label for='titleInput'>Interest Name</label>
+                    <input type='text' class='form-control' id='titleInput' placeholder='interest'>
+                </div>
+
+                <div class='form-group'>
+                    <label for='descriptionInput'>Description</label>
+                    <textarea class='form-control' id='descriptionInput' rows='5' placeholder='talk about it'></textarea>
+                </div>
+
+                <div class='form-row'>
+                    <div class='form-group'>
+                        <label for='imageUpload'>Upload Image</label>
+                        <input type='file' class='form-control-file' id='imageUpload' name='newImgFile'>
+                    </div>
+                    <div class='form-group'>
+                        <label for='reqDispNum'>Display # Tweets</label>
+                        <select class='form-control' id='reqDispNum'>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                </div> <!-- form row -->
+
+                <!-- radio buttons inline rating -->
+                <label for='ratings'>Rate interest on scale of 1-5</label><br>
+                <div class='form-check form-check-inline'>
+                    <input class='form-check-input' type='radio' name='ratings' id='rate1' value='rating1'>
+                    <label class='form-check-label' for='selectRating'>1</label>
+                </div>
+                <div class='form-check form-check-inline'>
+                    <input class='form-check-input' type='radio' name='ratings' id='rate2' value='rating2'>
+                    <label class='form-check-label' for='selectRating'>2</label>
+                </div>
+                <div class='form-check form-check-inline'>
+                    <input class='form-check-input' type='radio' name='ratings' id='rate3' value='rating3'>
+                    <label class='form-check-label' for='selectRating'>3</label>
+                </div>
+                <div class='form-check form-check-inline'>
+                    <input class='form-check-input' type='radio' name='ratings' id='rate4' value='rating4'>
+                    <label class='form-check-label' for='selectRating'>4</label>
+                </div>
+                <div class='form-check form-check-inline'>
+                    <input class='form-check-input' type='radio' name='ratings' id='rate5' value='rating5'>
+                    <label class='form-check-label' for='selectRating'>5</label>
+                </div>
+                <br><br>
+                <label for='credentials'>Log in to submit</label>
+                <div class='form-row'>
+                    <div class='form-group'>
+                        <input class='form-control' type='text' placeholder='username' id='username'>
+                    </div>
+                    <div class='form-group'>
+                        <input class='form-control' type='password' placeholder='password' id='password'>
+                    </div>
+                </div>
+                <button type='submit' class='btn btn-primary' onClick="window.location.href='mypage_bootstrap.html'">Submit</button>
+
+            </form>
+        </div>
+    </body>
+</html>
